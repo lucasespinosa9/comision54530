@@ -7,28 +7,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>oktuber</title>
+    <link
+    rel="stylesheet"
+    href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
     <link rel="stylesheet" href="../css/style.css">
 
 </head>
 
 <body>
-    <header>
-        <div class="header-nav">
-            <a href=file:///C:/Users/Julian/Desktop/primer-proyecto/index.html><img src=../assets/img/oktubre.jpg
+    <div class="general">
+        <header class="header-nav">
+            <nav>
+                <a href=file:///C:/Users/Julian/Desktop/primer-proyecto/index.html><img src=../assets/img/oktubre.jpg
                     alt=logodecervezaoktubre></a>
-            <div>
-                <nav>
-                    <ul class="navbar">
-                        <li><a href="./tiendaonline.html">TIENDA ONLINE</a></li>
-                        <li><a href="./locales.html">LOCALES</a></li>
-                        <li><a href="./nosotros.html">NOSOTROS</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <div class="navbar2">
-                <a href="./pago.html"><img src=../assets/img/carrito.png alt=carritodesuper></a>
-            </div>
-    </header>
+                <label for="toggle"><i class="material-icons">menu</i></label>
+                <input type="checkbox" id="toggle">
+                <div class="navbar">
+                <ul>
+                    <li><a href="./tiendaonline.html">TIENDA ONLINE</a></li>
+                    <li><a href="./locales.html">LOCALES</a></li>
+                    <li><a href="./nosotros.html">NOSOTROS</a></li>
+                </ul>
+                </div>
+        <div class="navbar2">
+            <a href="./pago.html"><img src="../assets/img/carrito.png" alt=carrito></a>
+        </div>
+    </nav>
+</header>
     <main>
         <form action="">
             <fieldset class="datospersonales">
@@ -66,7 +72,7 @@
                 <input type="text" id="nombre" placeholder="ingresa nombre" required>
                 <label for="pas">Cvv</label>
                 <input type="password" id="cvv" placeholder="ingresa cvv" required>
-                <input type="submit" value="Enviar">
+                <input class="enviar" type="submit" value="Enviar">
             </fieldset>
         </form>
     </main>
@@ -89,7 +95,7 @@
             <a href="https://web.whatsapp.com/"><img src="../assets/img/whatsapp.png" alt="whatsapp"></a>
         </div>
     </footer>
-
+    </div>
 
 </body>
 
