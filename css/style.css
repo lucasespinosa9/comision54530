@@ -30,17 +30,24 @@ nav {
     flex-direction: row;
     width: 100%;
     height: 150px;
-    align-items: end;
     justify-content: space-between;
     font-size: 40px;
     background-color: #1E1E1E;
+
+}
+
+.navbar{
+    display: flex;
+    align-items: end;
 }
 
 nav ul {
 
     list-style: none;
     display: flex;
-    gap: 20px;
+    gap: 20px; 
+
+
 }
 
 nav a {
@@ -80,77 +87,73 @@ nav label {
 .redes img {
     object-fit: cover;
     width: 40px;
-
 }
 
-.principal {
-    height: 700px;
+    h5{
+        width: auto;
+        font-size: 60px;
+        color: black;
+        background-color: white;
+    }
+    .carousel-item img{
+    height: 600px;
     width: 100%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    background-image: url("../assets/img/conocecerveza.jpg");
-    background-size: cover;
-    opacity: 0.8;
-}
-
-.principal h1 a {
-    text-decoration: none;
-    font-family: fuente2;
-    color: black;
-    font-size: 100px;
-}
-
-
-
-.promo {
-
-    display: grid;
-    grid-template-columns: repeat(3, 270px);
-    grid-template-rows: 100px repeat(2, 250px);
-    background-image: url(../assets/img/lupulo.jpg);
-    background-size: cover;
-    background-position: center;
-    justify-content: center;
-    gap: 40px;
-    margin: 70px;
-
-}
-
-.promo img {
     object-fit: cover;
-    width: 100%;
-    height: 100%;
-}
-
-.promo :nth-child(1) {
-    grid-row: 2/4;
-    grid-column: 1/1;
-
-}
-
-.promo h2 {
-    grid-column-start: 1;
-    grid-column-end: 4;
-    align-self: center;
-    justify-self: center;
-    font-size: 80px;
-}
+    }
 
 
 
-.promo :nth-child(3) {
-    grid-row: 2/4;
-    grid-column: 2/2;
 
-}
 
-.promo :nth-child(4) {
-    grid-row: 2/4;
-    grid-column: 3/3;
+    .promo {
 
-}
+        display: grid;
+        grid-template-columns: repeat(3, 280px);
+        grid-template-rows: 80px repeat(2, 170px);
+        background-image: url(../assets/img/lupulo.jpg);
+        background-size: cover;
+        background-position: center;
+        justify-content: space-around;
+        
+        margin: 110px;
+        padding-bottom: 20px;
+    }
+    
+    .promo img {
+        object-fit: cover;
+        width: auto;
+        height: 100%;
+    }
+    
+    .promo :nth-child(1) {
+        grid-row: 2/4;
+        grid-column: 1/1;
+    
+    }
+    
+    .promo h2 {
+        grid-column-start: 1;
+        grid-column-end: 4;
+        align-self: center;
+        justify-self: center;
+        font-size: 70px;
+        color: black;
+        font-family: fuente1;
+    }
+    
+    
+    
+    .promo :nth-child(3) {
+        grid-row: 2/4;
+        grid-column: 2/2;
+    
+    }
+    
+    .promo :nth-child(4) {
+        grid-row: 2/4;
+        grid-column: 3/3;
+    
+    }
 
 
 
@@ -178,12 +181,14 @@ nav label {
     grid-column-end: 4;
     align-self: center;
     justify-self: center;
-    font-size: 80px;
+    font-size: 60px;
+    color: black;
+    font-family: fuente2;
 }
 
 .producto p {
     color: white;
-    font-size: 60px;
+    font-size: 50px;
 }
 
 .producto :nth-child(2) {
@@ -266,10 +271,12 @@ nav label {
 
 .botellas p {
     font-size: 30px;
+    background-color: white;
 }
 
 .botellas h3 {
     font-size: 40px;
+    background-color: white;
 }
 
 .botellas button {
@@ -329,10 +336,12 @@ nav label {
 
 .lata p {
     font-size: 30px;
+    background-color: white;
 }
 
 .lata h3 {
     font-size: 40px;
+    background-color: white;
 }
 
 .lata button {
@@ -394,10 +403,12 @@ nav label {
 
 .vaso p {
     font-size: 30px;
+    background-color: white;
 }
 
 .vaso h3 {
     font-size: 40px;
+    background-color: white;
 }
 
 .vaso button {
@@ -459,10 +470,12 @@ nav label {
 
 .choperas p {
     font-size: 30px;
+    background-color: white;
 }
 
 .choperas h3 {
     font-size: 40px;
+    background-color: white;
 }
 
 .choperas button {
@@ -522,7 +535,7 @@ nav label {
     list-style: none;
     justify-content: space-around;
     width: auto;
-    height: 270px;
+    height: 280px;
     margin: 100px;
     background-color: #1E1E1E;
     font-size: 20px;
@@ -545,18 +558,18 @@ nav label {
 }
 
 .conteiner-pilar iframe {
-    height: 200px;
-    width: 500px;
+    height: auto;
+    width: 100%;
 }
 
-.conteiner-laplata {
+.conteiner-laplata  {
     color: aliceblue;
     display: flex;
     flex-direction: row;
     list-style: none;
     justify-content: space-around;
     width: auto;
-    height: 270px;
+    height: 280px;
     margin: 100px;
     background-color: #1E1E1E;
     font-size: 20px;
@@ -564,7 +577,7 @@ nav label {
     border: 3px solid white;
 }
 
-.laplata h3 {
+.conteiner-laplata h3 {
     padding: 25px;
     font-size: 40px;
 
@@ -580,8 +593,8 @@ nav label {
 }
 
 .conteiner-laplata iframe {
-    height: 200px;
-    width: 500px;
+    height: auto;
+    width: 100%;
 }
 
 .conteiner-mar {
@@ -591,7 +604,7 @@ nav label {
     list-style: none;
     justify-content: space-around;
     width: auto;
-    height: 270px;
+    height: 280px;
     margin: 100px;
     background-color: #1E1E1E;
     font-size: 20px;
@@ -613,8 +626,8 @@ nav label {
 }
 
 .conteiner-mar iframe {
-    height: 200px;
-    width: 500px;
+    height: auto;
+    width: 100%;
 }
 
 
@@ -695,6 +708,10 @@ input {
 }
 
 @media (max-width:1024px) {
+    .navbar ul{
+        font-size: 30px;
+    }
+    
     .principal h1 a {
         font-size: 80px;
     }
@@ -704,6 +721,10 @@ input {
         grid-template-rows: 100px 250px;
         margin-left: 90px;
         margin-right: 90px;
+    }
+    .promo img{
+        height: 100%;
+        width: 100%;
     }
 
     .promo h2 {
@@ -757,6 +778,8 @@ input {
         align-self: center;
         justify-self: center;
     }
+
+
 
     .botellas {
         height: 100%;
@@ -964,10 +987,7 @@ input {
         margin-top: 80px;
     }
 
-    .pilar iframe {
-        height: 150px;
 
-    }
 
     .conteiner-laplata {
         width: 100%;
@@ -975,10 +995,10 @@ input {
         margin-top: 80px;
     }
 
-    .laplata iframe {
-        height: 150px;
 
-    }
+.laplata2 p{
+    font-size: 20px;
+}
 
     .conteiner-mar {
         width: 100%;
@@ -986,10 +1006,6 @@ input {
         margin-top: 80px;
     }
 
-    .mar iframe {
-        height: 150px;
-
-    }
 
     .nosotros {
         font-size: 30px;
@@ -1007,23 +1023,33 @@ input {
 
 @media (max-width:768px) {
 
+    .header-nav{
+        height: 100px;
+    }
+
+
 
     nav .navbar {
         width: 100%;
         height: 0;
         overflow: hidden;
         font-size: 30px;
+
     }
+
 
     nav img {
         height: 100px;
         width: 100px;
     }
 
-
+    .navbar ul{
+        font-size: 16px;
+    }
     nav ul {
         flex-direction: column;
-        align-items: center;
+        align-self: start;
+        gap: 0px;
 
     }
 
@@ -1033,12 +1059,24 @@ input {
         cursor: pointer;
     }
 
-    nav #toggle:checked~.navbar {
-        height: 100%;
+    .navbar li a{
+        font-size: 15px;
     }
 
-    .principal h1 a {
-        font-size: 60px;
+    nav #toggle:checked~.navbar {
+        height: 100%;
+        font-size: 15px;
+    }
+
+    .navbar2 img{
+        width: 80px;
+        height: 80px;
+    }
+
+    h5{
+
+        font-size: 40px;
+
     }
 
     .promo {
@@ -1065,64 +1103,114 @@ input {
     }
 
     .botellas button {
-        font-size: 17px;
+        font-size: 15px;
+    }
+    .botellas h3{
+        font-size: 20px;
     }
 
     .lata button {
-        font-size: 17px;
+        font-size: 15px;
+    }
+
+    .lata img{
+        height: 100px;
+        width: 70px;
+    }
+    .lata h3{
+        font-size: 20px;
+    }
+
+    .vaso img{
+        height: 100px;
+        width: 70px;
     }
 
     .vaso button {
-        font-size: 17px;
+        font-size: 15px;
+    }
+    .vaso h3{
+        font-size: 20px;
+    }
+
+    .choperas img{
+        height: 100px;
+        width: 70px;
     }
 
     .choperas button {
-        font-size: 17px;
+        font-size: 15px;
     }
 
     .choperas h3 {
-        font-size: 25px;
+        font-size: 20px;
     }
 
-    .conteiner-pilar {
-        height: 400px;
-
+    .conteiner-pilar{
+        gap: 10px;
     }
 
-    .pilar iframe {
-        width: 200px;
+    .conteiner-pilar h3  {
+        padding: 20px;
+        font-size: 30px;
+    
+    }
+    
+    .conteiner-pilar ul {
+        list-style-type: none;
+        font-size: 18px;
+        
+}
+
+    .conteiner-pilar li a {
+        color: white;
+        font-size: 18px;
+}
+    .pilar2 p{
+        font-size: 18px;
+}
+
+    .conteiner-laplata{
+        gap: 10px;
+}
+    .conteiner-laplata h3{
+        padding: 20px;
+        font-size: 30px;
+}
+
+    .laplata2 p {
+        font-size: 18px;
     }
 
-    .conteiner-laplata {
-        height: 400px;
-
+    .conteiner-mar{
+        gap: 10px;
     }
 
-    .laplata iframe {
-        width: 200px;
-    }
+    .conteiner-mar h3{
+        padding: 20px;
+        font-size: 30px;
+    }  
 
-    .conteiner-mar {
-        height: 400px;
+.mar2 p{
+    font-size: 18px;
+}
 
-    }
 
-    .mar iframe {
-        width: 200px;
-    }
 
     .nosotros {
         margin: 0;
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:625px) {
     nav .navbar {
         font-size: 20px;
     }
 
-    .principal h1 a {
-        font-size: 36px;
+    h5{
+
+        font-size: 20px;
+
     }
 
     .promo {
