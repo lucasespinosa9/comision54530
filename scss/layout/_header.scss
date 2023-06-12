@@ -1,0 +1,48 @@
+.header-nav {
+    width: 100%;
+    height: 150px;
+    position: sticky; 
+    top: 0px;
+    z-index: 4;
+    
+}
+nav {
+    @include flex( row,space-between,center,0px);
+    width: 100%;
+    height: 150px;
+    font-size: 40px;
+    background-color: $color-principal;
+}
+.navbar{
+    display: flex;
+    align-items: end;
+
+    ul {
+    list-style: none;
+    display: flex;
+    gap: 20px; 
+    padding: 0;
+    margin-top: 4rem;
+    a {
+    padding: auto;
+    color: white;
+    &:hover{
+    color: aqua;
+}
+}
+}
+}
+.navbar2 img {
+    object-fit: cover;
+    width: 100px;
+    height: 100px;
+    padding: 20px;
+}
+
+nav #toggle,
+nav label {
+    display: none;
+}
+.general {
+    background-color: $color-principal;
+}

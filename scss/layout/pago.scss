@@ -1,0 +1,49 @@
+.datospersonales {
+    @include flex(column,center,none,0px);
+    color: aliceblue;
+    width: auto;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: $color-principal ;
+    margin: 100px;
+    legend {
+        font-size: 50px;
+        display: flex;
+        justify-self: center;
+        text-align: center;
+    }
+    
+    input {
+        margin-bottom: 20px;
+        padding: 10px;
+    
+}
+}
+.pago {
+    @include flex(column,center,none,0px);
+    color: aliceblue;
+    width: auto;
+    height: 600px;
+    background-color: $color-principal #1E1E1E;
+    margin: 100px;
+
+
+legend {
+    font-size: 50px;
+    display: flex;
+    justify-self: center;
+    text-align: center;
+}
+
+input {
+    margin-bottom: 20px;
+    padding: 10px;
+
+}
+.enviar{
+    height: 100px;
+
+}
+}
