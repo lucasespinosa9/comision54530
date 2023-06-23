@@ -1,5 +1,5 @@
 .promo {
-    @include grid( repeat(3, 280px), 80px repeat(2, 170px),0px,space-around);
+    @include grid( repeat(3, 250px), 80px repeat(2, 170px),0px,space-around);
     background-image: url(../assets/img/lupulo.jpg);
     background-size: cover;
     background-position: center;
@@ -41,7 +41,7 @@ h2 {
 }
 }
 .producto {
-@include grid (repeat(3, 300px),100px repeat(4, 100px),30px,space-around,);
+@include grid (repeat(3, 250px),100px repeat(4, 100px),30px,space-around,);
     background-image: url(../assets/img/malta.jpg);
     background-size: cover;
     background-position: center;
