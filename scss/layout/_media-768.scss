@@ -24,32 +24,44 @@ label {
     overflow: hidden;
     font-size: 40px;
     letter-spacing: 8px;
-
+    clip-path: circle(0% at center);
+    transition: clip-path 1s ease-in-out;
 ul{
-    width: 100%;
-    display: block;
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 60%;
     text-decoration: none;
     border: 1px solid #BE353D;
     padding: .3em 0;
     text-align: center;
-background: $color-principal ;
+    background: $color-principal ;
     transition: 1s all;
 &:hover {
-    background: #ec7b5f;
+    background: red;
 }}
 li a{
     font-size: 25px;
 }
 }
-nav #toggle:checked~.navbar {
-    height: 100%;
+nav #toggle:checked+.navbar {
+height: 100%;
     font-size: 20px;
+    clip-path: circle(1000% at center);
+
+
 }
 
 .navbar2 img{
     width: 70px;
     height: 70px;
 }
+
 
 
 
