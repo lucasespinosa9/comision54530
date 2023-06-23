@@ -51,7 +51,7 @@ nav label {
 
 .promo {
   display: grid;
-  grid-template-columns: repeat(3, 280px);
+  grid-template-columns: repeat(3, 250px);
   grid-template-rows: 80px repeat(2, 170px);
   gap: 0px;
   justify-content: space-around;
@@ -76,7 +76,7 @@ nav label {
     grid-template-rows: 1/2;
     align-self: center;
     justify-self: center;
-    font-size: 70px;
+    font-size: 60px;
     color: black;
     font-family: fuente1; }
   .promo :nth-child(3) {
@@ -88,7 +88,7 @@ nav label {
 
 .producto {
   display: grid;
-  grid-template-columns: repeat(3, 300px);
+  grid-template-columns: repeat(3, 250px);
   grid-template-rows: 100px repeat(4, 100px);
   gap: 30px;
   justify-content: space-around;
